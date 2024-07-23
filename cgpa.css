@@ -1,0 +1,264 @@
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
+    font-size: 0.925rem;
+}
+/* media queries fo different screen size */
+@media (max-width:768px) {
+    .container{
+        width: 90%;
+    }
+    .buttons{
+        margin:8px 0;
+    }
+    .result-display{
+        width: 80%;
+    }
+}
+
+body {
+    
+    background-image:linear-gradient(to right, #044405, #508D4E);
+    position: relative;
+    margin: 0;
+    text-align: center;
+    padding-bottom: 7rem;
+    
+
+}
+
+.top-heading {
+    color: black;
+    padding: 20px 0;
+    letter-spacing: 2.5px;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.container {
+    background-color: #D6EFD8;
+    width: 75%;
+    margin: auto;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 1px 2px 5px 2px black;
+}
+
+#mini-container {
+    display: none;
+}
+
+.starter {
+    padding-bottom: 12px;
+    font-size: 1rem;
+}
+
+.starter p {
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+.buttons {
+    margin: 0 12px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 5px;
+    background-color: rgb(241, 237, 231);
+    box-shadow: 0 1px 4px black;
+}
+
+.buttons:hover {
+    background: rgb(232, 221, 157);
+    box-shadow: 0 1px 3px black;
+    border: 1px solid #1A5319 ;
+    color:kh;
+}
+
+#choose_dropdown {
+    padding: 0.05rem 0;
+}
+
+#choose_dropdown p {
+    padding: 5px 0 15px;
+    letter-spacing: 0.5px;
+    font-size: 0.925rem;
+}
+
+#courses_drop_down {
+    padding: 2px;
+    border: solid 1px #1A5319;
+    border-radius: 5px;
+}
+
+.dropdown-submit-btn {
+    width: 3.75rem;
+    font-size: 0.92rem;
+    padding: 2px 1px;
+}
+
+#main-table {
+    display: none;
+}
+
+#main-table p {
+    padding: 5px 0;
+}
+
+#inner_table {
+    width: 100%;
+    margin: auto;
+}
+
+th {
+    width: 8%;
+    background-color: #508D4E;
+    padding: 15px 0 0 0;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+td {
+    width: 8%;
+    background-color: #508D4E;
+    padding: 10px 0px;
+}
+
+input, .grad {
+    width: 80%;
+    background-color: #D6EFD8;
+    padding: 5px 5px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 7px;
+    color: rgb(50, 0, 0);
+}
+
+.calc-btn {
+    width: 35%;
+    margin: 10px 0;
+}
+
+.result-display {
+    display: none;
+    text-align: center;
+    padding: 10px 2px;
+    border: 1.5px solid black;
+    width: 40%;
+    margin: 10px auto;
+    border-radius: 7.5px;
+    box-shadow: 1px 2px 3px black;
+    background-color: rgb(232, 221, 157);
+    color: black;
+    display: hidden;
+    transition: all 0.3s;
+}
+
+.result-display:hover {
+    transform: scale(1.04);
+}
+
+#show_result {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 1.4px;
+}
+
+#final-val {
+    color: red;
+    font-weight: bolder;
+}
+footer{
+    background-color: black;
+    font-size: 10px;
+    text-align: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin-top: auto;
+
+}
+.footer-container{
+    width:100% ;
+    padding: 0;
+    text-align: center;
+}
+.social{
+    display: flex;
+    justify-content: center;
+
+}
+.social a{
+    text-decoration: none;
+    padding :5px;
+    background-color: whitesmoke;
+    margin:5px;
+    border-radius: 50%;
+    
+}
+.social a i{
+    font-size: 2rem;
+    color: black;
+    opacity: 0.9;
+    justify-content: space-evenly;
+}
+.social a:hover {
+    background-color: black;
+    transition: 0.5s;
+}
+.social a:hover i{
+    color: #1A5319;
+    transition: 0.5s;
+}
+.footer-bottom{
+    background-color: black;
+    text-align:center;
+}
+.footer-bottom p{
+    color: whitesmoke;
+}
+.designer{
+    opacity:0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+/* .percent-display {
+    display: none;
+    text-align: center;
+    padding: 10px 2px;
+    border: 1.5px solid black;
+    width: 40%;
+    margin: 10px auto;
+    border-radius: 7.5px;
+    box-shadow: 1px 2px 3px black;
+    background-color: rgb(232, 221, 157);
+    color: black;
+    display: hidden;
+    transition: all 0.3s;
+}
+
+.percent-display:hover {
+    transform: scale(1.04);
+}
+
+#show_percent {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 1.4px;
+}
+
+#per-val {
+    color: red;
+    font-weight: bolder;
+} */
