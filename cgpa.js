@@ -66,7 +66,7 @@ function generateSubjectRow(index) {
     return `<tr>
                 <td><input type='text' placeholder='subject ${index + 1}'></td>
                 <td><input class='cred' onKeyDown='if(this.value.length==1 && event.keyCode!=8) return false;' required type='number'></td>
-                <td><select class='grad'><option value=''>---Select Grade---</option><option value='10'>A+</option><option value='9'>A</option><option value='8'>B+</option><option value='7'>B</option><option value='6'>B+</option><option value='5'>C</option><option value='4'>N/F</option></select></td>
+                <td><select class='grad'><option value=''>---Select Grade---</option><option value='10'>A+</option><option value='9'>A</option><option value='8'>B+</option><option value='7'>B</option><option value='6'>C+</option><option value='5'>C</option><option value='4'>D</option><option value='3'>N/F</option></select></td>
             </tr>`;
 }
 
